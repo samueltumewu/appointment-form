@@ -17,7 +17,7 @@ export const ContactsPage = ({contacts, addNewContact}) => {
     setIsNameDuplicated(
       contacts.some((contact) => contact.contactName === currName)
     )
-  },[currName])
+  },[currName, contacts])
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,11 +34,6 @@ export const ContactsPage = ({contacts, addNewContact}) => {
     alert(`${currName} already exist. Please use different name!`)
    }
   };
-
-  /*
-  Using hooks, check for contact name in the 
-  contacts array variable in props
-  */
 
   return (
     <div>
