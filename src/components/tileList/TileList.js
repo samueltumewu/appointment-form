@@ -5,8 +5,8 @@ export const TileList = ({contacts}) => {
   return (
     <div>
       {contacts.map((contact, index)=>{
-        const {contactName, ...desc} = contact;
-        return <Tile key={index} name={contactName} description={desc}/>
+        const {name, ...desc} = contact;
+        return <Tile key={index} name={name} description={desc}/>
       })}
     </div>
   );

@@ -17,7 +17,7 @@ function App() {
   */
   const addNewContact = (contactName, phone, email) => {
     const newContact = {
-      contactName: contactName,
+      name: contactName,
       phone: phone,
       email: email
     }
@@ -28,7 +28,7 @@ function App() {
   };
   const addNewAppointments = (appointmentName, contact, date, time) => {
     const newAppointment = {
-      appointmentName: appointmentName,
+      name: appointmentName,
       contact: contact,
       date: date,
       time: time
