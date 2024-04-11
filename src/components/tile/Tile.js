@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Tile = ({key, name, description}) => {
+export const Tile = ({name, description}) => {
   return (
     <div className="tile-container">
       <p className="tile-title tile">{name}</p>
